@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet openclassrooms n°3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iTwiixZ/AlexisChampion_3_20112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iTwiixZ/AlexisChampion_3_20112021/issues"
+  },
+  "homepage": "https://github.com/iTwiixZ/AlexisChampion_3_20112021#readme",
+  "devDependencies": {
+    "sass": "^1.43.5"
+  }
+}
