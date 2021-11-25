@@ -10,9 +10,7 @@ body
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-
 /* HEADER */
-
 header
 {
     font-family : 'Shrikhand', cursif ;
@@ -22,9 +20,7 @@ header
     margin: 0;
     position: relative;
 }
-
-/* CITY */
-
+/* Localisation */
 .city
 {
     text-align: center;
@@ -34,12 +30,46 @@ header
     align-items: center;
     justify-content: center;
     gap: 18px;
-    font-size: 14px;
-    
-    
+    font-size: 12px;
 }
 .city i
 {
     font-size: 22px;
 }
-
+/* EXPLORER */
+.explorer
+{
+    text-align: center;
+    background-color:#f6f6f6;
+    padding: 16px;
+   
+}
+.explorer h2
+{
+    margin-top: 24px;
+    font-size: 32px;
+}
+.explorer p
+{
+    font-size: 16px;
+    
+}
+.explorer button
+{
+    background:linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
+    margin-bottom:32px;
+    transition: all 350ms ease;
+}
+.explorer button:hover
+{
+    transform: scale(1.1);
+    opacity: 0.85;
+}
