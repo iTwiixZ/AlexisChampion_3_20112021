@@ -4,7 +4,7 @@
   "description": "Projet openclassrooms n°3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch style.scss style.css"
   },
   "repository": {
     "type": "git",
