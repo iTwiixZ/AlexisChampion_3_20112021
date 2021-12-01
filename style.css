@@ -119,4 +119,95 @@ header img {
   font-size: 16px;
 }
 
+.restaurant {
+  background-color: #f6f6f6;
+  margin-top: 44px;
+  padding: 16px;
+}
+.restaurant h2 {
+  margin-left: 16px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+.menu__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.menu__cards .new {
+  position: relative;
+}
+.menu__cards .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 30px;
+  width: 90px;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
+  right: 16px;
+  top: 16px;
+}
+
+.card_restaurant {
+  background-color: white;
+  box-shadow: -1px 3px 8px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 16px 16px 16px 16px;
+  width: 320px;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card_restaurant h3 {
+  margin-left: 14px;
+  margin-bottom: -5px;
+  display: flex;
+  justify-content: space-between;
+}
+.card_restaurant h3 i {
+  margin-right: 16px;
+  font-size: 26px;
+  background-color: white;
+  position: relative;
+}
+.card_restaurant p {
+  margin-left: 14px;
+}
+.card_restaurant img {
+  height: 190px;
+  width: 320px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+  background-color: #353535;
+  padding: 20px;
+}
+footer h3 {
+  color: white;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+}
+footer ol {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: -20px;
+}
+
 /*# sourceMappingURL=style.css.map */
