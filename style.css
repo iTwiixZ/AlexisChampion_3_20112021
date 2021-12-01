@@ -122,7 +122,8 @@ header img {
 .restaurant {
   background-color: #f6f6f6;
   margin-top: 44px;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 60px;
 }
 .restaurant h2 {
   margin-left: 16px;
@@ -194,6 +195,7 @@ footer h3 {
   color: white;
   font-family: "Shrikhand", sans-serif;
   font-weight: 300;
+  margin-left: 20px;
 }
 footer ol {
   list-style-type: none;
@@ -202,6 +204,10 @@ footer ol {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+footer i {
+  margin-right: 8px;
+  font-size: 13px;
 }
 
 a {
