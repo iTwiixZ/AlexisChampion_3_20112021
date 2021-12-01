@@ -100,11 +100,11 @@ header img {
   bottom: 17px;
   left: -15px;
 }
-.fonctionnement_list li:hover {
+.fonctionnement_list li:active {
   background-color: #f5edff;
   cursor: pointer;
 }
-.fonctionnement_list li:hover i {
+.fonctionnement_list li:active i {
   color: #9356DC;
 }
 .fonctionnement_list h2 {
