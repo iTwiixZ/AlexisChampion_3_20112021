@@ -63,7 +63,7 @@ header img {
   margin-bottom: 32px;
   transition: all 350ms ease;
 }
-.explorer button:hover, .explorer :active {
+.explorer button:hover, .explorer button:active {
   transform: scale(1.1);
   opacity: 0.85;
 }
