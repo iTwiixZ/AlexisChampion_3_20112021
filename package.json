@@ -18,5 +18,8 @@
   "homepage": "https://github.com/iTwiixZ/AlexisChampion_3_20112021#readme",
   "devDependencies": {
     "sass": "^1.43.5"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
