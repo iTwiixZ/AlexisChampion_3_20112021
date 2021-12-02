@@ -167,14 +167,6 @@ header img {
 .card_restaurant h3 {
   margin-left: 14px;
   margin-bottom: -5px;
-  display: flex;
-  justify-content: space-between;
-}
-.card_restaurant h3 i {
-  margin-right: 16px;
-  font-size: 26px;
-  background-color: white;
-  position: relative;
 }
 .card_restaurant p {
   margin-left: 14px;
@@ -185,6 +177,37 @@ header img {
   border-radius: 10px 10px 0 0;
   object-fit: cover;
   object-position: center;
+}
+
+.heart {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: 76px;
+}
+.heart .fas {
+  font-size: 30px;
+  opacity: 0;
+  color: transparent;
+  position: absolute;
+  top: 5.7px;
+  left: 272.6px;
+  right: 15px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(24deg, #ff79da 50%, #9356dc 100%);
+  transition: all 320ms ease-out;
+}
+.heart .fas:hover, .heart .fas :active {
+  opacity: 1;
+  font-size: 31.5px;
+  transform: scale(1.085);
+}
+.heart .far {
+  font-size: 27px;
+  margin-right: 16.5px;
+  margin-top: 7.5px;
+  position: absolute;
 }
 
 footer {
@@ -208,6 +231,9 @@ footer ol {
 footer i {
   margin-right: 8px;
   font-size: 13px;
+}
+footer .fa-hands-helping {
+  font-size: 11px;
 }
 
 a {
