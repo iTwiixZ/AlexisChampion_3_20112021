@@ -63,7 +63,7 @@ header img {
   margin-bottom: 32px;
   transition: all 350ms ease;
 }
-.explorer button:hover, .explorer button:active {
+.explorer button:hover {
   transform: scale(1.1);
   opacity: 0.85;
 }
@@ -100,11 +100,11 @@ header img {
   bottom: 17px;
   left: -15px;
 }
-.fonctionnement_list li:hover, .fonctionnement_list li :active {
+.fonctionnement_list li:hover {
   background-color: #f5edff;
   cursor: pointer;
 }
-.fonctionnement_list li:hover i, .fonctionnement_list li :active i {
+.fonctionnement_list li:hover i {
   color: #9356DC;
 }
 .fonctionnement_list h2 {
@@ -206,7 +206,7 @@ header img {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: all 320ms ease-out;
 }
-.heart .fas:hover, .heart .fas :active {
+.heart .fas:hover {
   opacity: 1;
   font-size: 31.5px;
   transform: scale(1.085);
@@ -338,24 +338,26 @@ a {
 .menu-grid .menus-category {
   background-color: white;
   border-radius: 16px 16px 16px 16px;
-  height: 70px;
+  height: 59px;
   box-shadow: -1px 3px 8px 2px rgba(0, 0, 0, 0.75);
 }
 .menu-grid .menus-category h3 {
-  font-weight: 500;
+  font-weight: bold;
+  font-size: 15px;
   margin-top: 8px;
   margin-left: 8px;
+  padding-bottom: 5px;
 }
 .menu-grid .menus-category p {
   display: flex;
   margin-left: 8px;
   justify-content: space-between;
   margin-top: -10px;
-  font-size: 15px;
+  font-weight: 100;
+  font-size: 14px;
 }
 .menu-grid .menus-category span {
   margin-right: 16px;
-  color: #353535;
   font-weight: 500;
 }
 .menu-grid .commander {
