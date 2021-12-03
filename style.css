@@ -307,7 +307,7 @@ a {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: all 320ms ease-out;
 }
-.main_menu .heart .fas:hover, .main_menu .heart .fas :active {
+.main_menu .heart .fas:hover {
   opacity: 1;
   font-size: 29px;
   transform: scale(1.085);

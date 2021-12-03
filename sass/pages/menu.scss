@@ -53,7 +53,7 @@
         -webkit-background-clip: text;
         background-image: linear-gradient(to top,#9356DC, #FF79DA);
         transition: all 320ms ease-out;
-        &:hover, :active{
+        &:hover{
             opacity: 1;
             font-size: 29px;
             transform: scale(1.085);
