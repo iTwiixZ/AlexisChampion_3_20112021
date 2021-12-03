@@ -164,6 +164,13 @@ header img {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  transition: all 250ms ease-in;
+}
+.card_restaurant:hover {
+  transform: scale(1.07);
+}
+.card_restaurant a {
+  margin-left: -0.5px;
 }
 .card_restaurant h3 {
   margin-left: 14px;
@@ -196,7 +203,7 @@ header img {
   right: 15px;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(24deg, #ff79da 50%, #9356dc 100%);
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: all 320ms ease-out;
 }
 .heart .fas:hover, .heart .fas :active {
@@ -241,6 +248,56 @@ a {
   text-decoration: none;
   color: white;
   margin-left: -20px;
+}
+
+.banner i {
+  color: #353535;
+  font-size: 22px;
+  position: relative;
+  right: 235px;
+  top: 3px;
+}
+
+.img_resto {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0 0;
+  padding: 16px;
+  font-weight: 500;
+}
+
+.main_menu .heart {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  bottom: 76px;
+}
+.main_menu .heart .fas {
+  font-size: 30px;
+  opacity: 0;
+  color: transparent;
+  position: absolute;
+  left: 328px;
+  right: 15px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+  transition: all 320ms ease-out;
+}
+.main_menu .heart .fas:hover, .main_menu .heart .fas :active {
+  opacity: 1;
+  font-size: 31.5px;
+  transform: scale(1.085);
+}
+.main_menu .heart .far {
+  font-size: 27px;
+  margin-right: 16.5px;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
