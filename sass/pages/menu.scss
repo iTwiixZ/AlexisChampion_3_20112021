@@ -11,13 +11,15 @@
     width: 100%;
 }
 
-h1{
+.title_menu{
     font-family: 'Shrikhand', sans-serif;
     font-size: 28px;
     background-color: #f6f6f6;
     border-radius: 20px 20px 0 0;
-    padding: 16px;
-    font-weight: 500;
+    padding: 20px;
+    margin-bottom: 0;
+    position: relative;
+    top: -85px;
 }
 
 .main_menu .heart{
@@ -25,34 +27,104 @@ h1{
     display: flex;
     justify-content: end;
     position: relative;
-    bottom: 76px;
+    bottom: 89px;
     .fas{
         font-size: 30px;
         opacity: 0;
         color: transparent;
         position: absolute;
-        left: 328px;
+        left: 330px;
         right: 15px;
-        background-clip: text;
+        top: -47px;
+        background-clip:text;
         -webkit-background-clip: text;
         background-image: linear-gradient(to top,#9356DC, #FF79DA);
         transition: all 320ms ease-out;
         &:hover, :active{
             opacity: 1;
-            font-size: 31.5px;
+            font-size: 29px;
             transform: scale(1.085);
             }
     }
     .far{
         font-size: 27px;
-        margin-right: 16.5px;
+        margin-right: 17px;
         position: absolute;
+        bottom: 19px;
+        color: #353535;
        
     }
     
 }
 
+// ENTRÉES
 
+.menu-grid{
+    margin-top: -85px;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 20px;
+
+    h2{
+        font-size: 18px;
+        font-weight: lighter;
+        span{
+            border-bottom:solid #99E2D0 2px;
+        }
+    }
+    .menus-category{
+        background-color:white;
+        border-radius: 16px 16px 16px 16px;
+        height: 70px;
+        box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
+        
+
+        h3{
+            font-weight: 500;
+            margin-top: 8px;
+            margin-left: 8px;
+        }
+        p{
+            display: flex;
+            margin-left: 8px;
+            justify-content: space-between;
+            margin-top: -10px;
+            font-size: 15px;
+        }
+        span{
+            margin-right: 16px;
+            color: #353535;
+            font-weight: 500;
+        }
+    }
+
+    .commander {
+        display: flex;
+        justify-content: center;
+        button
+        {
+            background:linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 16px 32px;
+            border-radius: 32px;
+            box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
+            margin-bottom:32px;
+            transition: all 350ms ease;
+            margin-top: 20px;
+        }
+        button:hover, button:active
+        {
+            transform: scale(1.1);
+            opacity: 0.85;
+        }
+    }
+}
 
 
 
