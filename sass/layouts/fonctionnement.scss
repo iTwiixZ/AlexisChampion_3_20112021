@@ -54,3 +54,37 @@
         font-size: 16px;
     }
 }
+
+// DESKTOP 
+@media (min-width:1025px){
+    .fonctionnement_list{
+        
+
+        ol{
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 100px;
+            
+        }
+
+        li{
+            width: 400px;
+            text-align: center;
+            font-size: 22px;
+            i{
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+// TABLET 
+@media (min-width: 768px) and (max-width: 1024px){
+    .fonctionnement_list{
+        li{
+            width: auto;
+            margin-right: 16px;
+        }
+    }
+}
