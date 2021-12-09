@@ -342,16 +342,18 @@ a {
   background-color: #f6f6f6;
   border-radius: 20px 20px 0 0;
   padding: 20px;
+  width: 100%;
   margin-bottom: 0;
   position: relative;
   top: -85px;
+  border: solid red 3px;
 }
 
 .main_menu .heart {
   display: flex;
-  justify-content: end;
+  align-items: center;
+  justify-content: space-around;
   position: relative;
-  bottom: 89px;
 }
 .main_menu .heart .fas {
   font-size: 30px;
@@ -360,13 +362,13 @@ a {
   position: absolute;
   left: 369px;
   right: 15px;
-  top: -47px;
+  top: -43px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: all 320ms ease-out;
 }
-.main_menu .heart .fas:hover {
+.main_menu .heart .fas:hover, .main_menu .heart .fas :active {
   opacity: 1;
   font-size: 29px;
   transform: scale(1.085);
@@ -375,7 +377,8 @@ a {
   font-size: 27px;
   margin-right: 17px;
   position: absolute;
-  bottom: 19px;
+  bottom: 112px;
+  left: 370px;
   color: #353535;
 }
 
