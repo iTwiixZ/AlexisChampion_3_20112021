@@ -199,11 +199,12 @@ header img {
   cursor: pointer;
   transition: all 250ms ease-in;
 }
-.card_restaurant:hover {
-  transform: scale(1.07);
-}
 .card_restaurant a {
   margin: 0px;
+  color: #000;
+}
+.card_restaurant:hover {
+  transform: scale(1.07);
 }
 .card_restaurant h3 {
   margin-left: 14px;
@@ -222,17 +223,17 @@ header img {
 
 .heart {
   display: flex;
+  align-items: center;
   justify-content: end;
   position: relative;
-  bottom: 76px;
+  bottom: 59px;
 }
 .heart .fas {
-  font-size: 30px;
   opacity: 0;
   color: transparent;
   position: absolute;
-  top: 5.7px;
-  left: 272.6px;
+  top: -7.3px;
+  left: 281.6px;
   right: 15px;
   background-clip: text;
   -webkit-background-clip: text;
@@ -241,11 +242,11 @@ header img {
 }
 .heart .fas:hover {
   opacity: 1;
-  font-size: 31.5px;
+  font-size: 22.5px;
   transform: scale(1.085);
 }
 .heart .far {
-  font-size: 27px;
+  font-size: 22px;
   margin-right: 16.5px;
   margin-top: 7.5px;
   position: absolute;

@@ -50,13 +50,14 @@
     flex-direction: column;
     cursor: pointer;
     transition: all 250ms ease-in;
+    a{
+        margin: 0px;
+        color: #000;
+    }
     &:hover{
         transform: scale(1.07);
     }
 
-    a{
-        margin: 0px;
-    }
 
     h3{
         margin-left: 14px;
@@ -81,16 +82,17 @@
 .heart{
     
     display: flex;
+    align-items: center;
     justify-content: end;
     position: relative;
-    bottom: 76px;
+    bottom: 59px;
     .fas{
-        font-size: 30px;
+        
         opacity: 0;
         color: transparent;
         position: absolute;
-        top: 5.7px;
-        left: 272.6px;
+        top: -7.3px;
+        left: 281.6px;
         right: 15px;
         background-clip: text;
         -webkit-background-clip: text;
@@ -98,16 +100,16 @@
         transition: all 320ms ease-out;
         &:hover{
             opacity: 1;
-            font-size: 31.5px;
+            font-size: 22.5px;
             transform: scale(1.085);
             }
     }
     .far{
-        font-size: 27px;
+        
+        font-size: 22px;
         margin-right: 16.5px;
         margin-top: 7.5px;
         position: absolute;
-       
     }
     
 }
