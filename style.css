@@ -136,6 +136,9 @@ header img {
     text-align: center;
     font-size: 22px;
   }
+  .fonctionnement_list li::before {
+    bottom: 24px;
+  }
   .fonctionnement_list li i {
     font-size: 20px;
   }
