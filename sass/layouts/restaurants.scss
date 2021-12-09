@@ -61,12 +61,13 @@
 
     h3{
         margin-left: 14px;
-        margin-bottom: -5px;
+        
         
         
         }
     p{
         margin-left: 14px;
+        margin-top: 0;
     
     }
         img{
@@ -83,16 +84,15 @@
     
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
     position: relative;
-    bottom: 59px;
     .fas{
-        
+        font-size: 22px;
         opacity: 0;
         color: transparent;
         position: absolute;
-        top: -7.3px;
-        left: 281.6px;
+        top: 18.7px;
+        left: 281.5px;
         right: 15px;
         background-clip: text;
         -webkit-background-clip: text;
@@ -108,8 +108,7 @@
         
         font-size: 22px;
         margin-right: 16.5px;
-        margin-top: 7.5px;
-        position: absolute;
+        
     }
     
 }

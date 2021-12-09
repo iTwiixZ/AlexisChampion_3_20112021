@@ -208,10 +208,10 @@ header img {
 }
 .card_restaurant h3 {
   margin-left: 14px;
-  margin-bottom: -5px;
 }
 .card_restaurant p {
   margin-left: 14px;
+  margin-top: 0;
 }
 .card_restaurant img {
   height: 190px;
@@ -224,16 +224,16 @@ header img {
 .heart {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   position: relative;
-  bottom: 59px;
 }
 .heart .fas {
+  font-size: 22px;
   opacity: 0;
   color: transparent;
   position: absolute;
-  top: -7.3px;
-  left: 281.6px;
+  top: 18.7px;
+  left: 281.5px;
   right: 15px;
   background-clip: text;
   -webkit-background-clip: text;
@@ -248,8 +248,6 @@ header img {
 .heart .far {
   font-size: 22px;
   margin-right: 16.5px;
-  margin-top: 7.5px;
-  position: absolute;
 }
 
 @media (min-width: 1025px) {
