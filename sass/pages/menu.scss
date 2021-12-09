@@ -143,7 +143,20 @@
 }
 
 
-
+// DESKTOP
+@media(min-width:1025px){
+    .title_menu{
+        font-size: 40px;
+    }
+    .menu-grid{
+        h2{
+            font-size: 24px;
+            span{
+                border-bottom: solid #99E2D0 4px ;
+            }
+        }
+    }
+}
 
 
 

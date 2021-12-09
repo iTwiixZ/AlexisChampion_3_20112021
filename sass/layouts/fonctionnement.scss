@@ -4,11 +4,11 @@
 
     ol{
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 18px;
-        
-        
-    }
+        padding: 0;
+     }
     li{
         &::before{
             content: counter(steps);

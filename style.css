@@ -79,8 +79,10 @@ header img {
 }
 .fonctionnement_list ol {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 18px;
+  padding: 0;
 }
 .fonctionnement_list li {
   position: relative;
@@ -438,6 +440,19 @@ a {
 .menu-grid .commander button:hover, .menu-grid .commander button:active {
   transform: scale(1.1);
   opacity: 0.85;
+}
+
+@media (min-width: 1025px) {
+  .title_menu {
+    font-size: 40px;
+  }
+
+  .menu-grid h2 {
+    font-size: 24px;
+  }
+  .menu-grid h2 span {
+    border-bottom: solid #99E2D0 4px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
