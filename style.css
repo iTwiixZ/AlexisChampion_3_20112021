@@ -355,13 +355,11 @@ a {
   position: relative;
 }
 .main_menu .heart .fas {
-  font-size: 30px;
-  opacity: 1;
+  opacity: 0;
   color: transparent;
   position: absolute;
-  left: 362px;
-  right: 15px;
-  top: -45px;
+  left: 363.2px;
+  top: -42px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -369,15 +367,16 @@ a {
 }
 .main_menu .heart .fas:hover, .main_menu .heart .fas :active {
   opacity: 1;
-  font-size: 29px;
+  font-size: 22.5px;
   transform: scale(1.085);
 }
 .main_menu .heart .far {
-  font-size: 27px;
+  font-size: 22px;
   position: absolute;
-  bottom: 108px;
+  bottom: 111px;
   left: 363px;
   color: #353535;
+  margin: 0;
 }
 
 .menu-grid {
