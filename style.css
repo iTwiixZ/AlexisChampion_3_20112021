@@ -346,7 +346,6 @@ a {
   margin-bottom: 0;
   position: relative;
   top: -85px;
-  border: solid red 3px;
 }
 
 .main_menu .heart {
@@ -357,12 +356,12 @@ a {
 }
 .main_menu .heart .fas {
   font-size: 30px;
-  opacity: 0;
+  opacity: 1;
   color: transparent;
   position: absolute;
-  left: 369px;
+  left: 362px;
   right: 15px;
-  top: -43px;
+  top: -45px;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
@@ -375,10 +374,9 @@ a {
 }
 .main_menu .heart .far {
   font-size: 27px;
-  margin-right: 17px;
   position: absolute;
-  bottom: 112px;
-  left: 370px;
+  bottom: 108px;
+  left: 363px;
   color: #353535;
 }
 
