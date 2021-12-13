@@ -442,6 +442,12 @@ a {
   opacity: 0.85;
 }
 
+.check {
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: end;
+}
+
 @media (min-width: 1025px) {
   .title_menu {
     font-size: 40px;
@@ -452,6 +458,14 @@ a {
   }
   .menu-grid h2 span {
     border-bottom: solid #99E2D0 4px;
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 
