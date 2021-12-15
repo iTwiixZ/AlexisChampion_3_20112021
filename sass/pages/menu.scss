@@ -95,9 +95,6 @@
         border-radius: 16px 16px 16px 16px;
         height: 59px;
         box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
-        
-               
-
         h3{
             font-weight: bold;
             font-size: 15px;
@@ -146,13 +143,75 @@
     }
 }
 
-.check{
-    background-color: #99E2D0;
-    display: flex;
-    justify-content: end;
-    
-    
+// ANIMATION 
+
+.delay-1 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 500ms;
+  animation-fill-mode: both;
 }
+.delay-2 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 900ms;
+    animation-fill-mode: both;
+  }
+  .delay-3 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 1300ms;
+    animation-fill-mode: both;
+  }
+  .delay-3 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 1700ms;
+    animation-fill-mode: both;
+  }
+  .delay-4 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 2100ms;
+    animation-fill-mode: both;
+  }
+  .delay-5 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 2500ms;
+    animation-fill-mode: both;
+  }
+  .delay-6 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 2900ms;
+    animation-fill-mode: both;
+  }
+  .delay-7 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 3300ms;
+    animation-fill-mode: both;
+  }
+  .delay-8 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 3700ms;
+    animation-fill-mode: both;
+  }
+  .delay-9 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 4100ms;
+    animation-fill-mode: both;
+  }
+  .delay-10 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 4500ms;
+    animation-fill-mode: both;
+  }
+
 
 // DESKTOP
 @media(min-width:1025px){

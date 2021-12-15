@@ -442,10 +442,81 @@ a {
   opacity: 0.85;
 }
 
-.check {
-  background-color: #99E2D0;
-  display: flex;
-  justify-content: end;
+.delay-1 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 500ms;
+  animation-fill-mode: both;
+}
+
+.delay-2 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 900ms;
+  animation-fill-mode: both;
+}
+
+.delay-3 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 1300ms;
+  animation-fill-mode: both;
+}
+
+.delay-3 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 1700ms;
+  animation-fill-mode: both;
+}
+
+.delay-4 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 2100ms;
+  animation-fill-mode: both;
+}
+
+.delay-5 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 2500ms;
+  animation-fill-mode: both;
+}
+
+.delay-6 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 2900ms;
+  animation-fill-mode: both;
+}
+
+.delay-7 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 3300ms;
+  animation-fill-mode: both;
+}
+
+.delay-8 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 3700ms;
+  animation-fill-mode: both;
+}
+
+.delay-9 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 4100ms;
+  animation-fill-mode: both;
+}
+
+.delay-10 {
+  opacity: 1;
+  transform: translateY(0);
+  animation: apparition 900ms 4500ms;
+  animation-fill-mode: both;
 }
 
 @media (min-width: 1025px) {
@@ -460,12 +531,14 @@ a {
     border-bottom: solid #99E2D0 4px;
   }
 }
-@keyframes appear {
+@keyframes apparition {
   0% {
-    transform: scale(0);
+    opacity: 0;
+    transform: translateY(5vh);
   }
   100% {
-    transform: scale(1);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
