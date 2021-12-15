@@ -541,5 +541,57 @@ a {
     transform: translateY(0);
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 0.7;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+.loader {
+  position: fixed;
+  background-color: #f6f6f6;
+  height: 100vH;
+  inset: 0;
+  z-index: 2;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: disappear 5s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.spinner {
+  height: 150px;
+  width: 150px;
+  border-bottom: solid 20px #f6f6f6;
+  border-top: solid 20px #f6f6f6;
+  border-left: solid 20px #FF79DA;
+  border-right: solid 20px #9356dc;
+  border-radius: 100%;
+  margin: auto;
+  animation: spin 1.5s linear infinite;
+  cursor: progress;
+}
 
 /*# sourceMappingURL=style.css.map */
