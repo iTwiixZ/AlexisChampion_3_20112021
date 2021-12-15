@@ -1,0 +1,21 @@
+@mixin delay-1 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 500ms;
+    animation-fill-mode: both;
+}
+
+@mixin delay-2 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 900ms;
+    animation-fill-mode: both;
+}
+
+@mixin delay-3 {
+    opacity: 1;
+    transform: translateY(0);
+    animation: apparition 900ms 1300ms;
+    animation-fill-mode: both;
+}
+
