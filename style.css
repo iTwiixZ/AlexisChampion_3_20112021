@@ -406,6 +406,7 @@ a {
   box-shadow: -1px 3px 8px 2px rgba(0, 0, 0, 0.75);
   transform: translate(0, 0);
   overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-grid .menus-category:hover .titre-flex {
   width: 85%;
@@ -441,7 +442,6 @@ a {
   font-weight: 400;
   color: black;
   font-size: 14px;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -642,6 +642,14 @@ a {
   .title_menu {
     text-align: center;
     font-size: 48px;
+  }
+}
+@media (min-width: 375px) {
+  .main_menu .heart .fas {
+    left: 338.2px;
+  }
+  .main_menu .heart .far {
+    left: 338px;
   }
 }
 @keyframes apparition {
