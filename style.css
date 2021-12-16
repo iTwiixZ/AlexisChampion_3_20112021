@@ -365,7 +365,12 @@ a {
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
   transition: all 320ms ease-out;
 }
-.main_menu .heart .fas:hover, .main_menu .heart .fas :active {
+.main_menu .heart .fas:hover {
+  opacity: 1;
+  font-size: 22.5px;
+  transform: scale(1.085);
+}
+.main_menu .heart .fas:active {
   opacity: 1;
   font-size: 22.5px;
   transform: scale(1.085);
@@ -409,6 +414,15 @@ a {
   transform: translate(0, 0);
 }
 .menu-grid .menus-category:hover i {
+  transform: translate(0, 0) rotate(1turn);
+}
+.menu-grid .menus-category:active .titre-flex {
+  width: 85%;
+}
+.menu-grid .menus-category:active .menu-check {
+  transform: translate(0, 0);
+}
+.menu-grid .menus-category:active i {
   transform: translate(0, 0) rotate(1turn);
 }
 .menu-grid .menus-category h3 {
@@ -565,6 +579,18 @@ a {
 
 @media (min-width: 1025px) {
   .img_resto {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .img_resto3 {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .img_resto4 {
     height: 300px;
     object-fit: cover;
     object-position: center;

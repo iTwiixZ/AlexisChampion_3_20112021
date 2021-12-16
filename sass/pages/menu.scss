@@ -57,10 +57,15 @@ $couleur-tertiaire : #99E2D0;
         -webkit-background-clip: text;
         background-image: linear-gradient(to top,$couleur-primaire, $couleur-secondaire);
         transition: all 320ms ease-out;
-        &:hover, :active{
+        &:hover{
             opacity: 1;
             font-size: 22.5px;
             transform: scale(1.085);
+            }
+            &:active{
+                opacity: 1;
+                font-size: 22.5px;
+                transform: scale(1.085);
             }
     }
     .far{
@@ -102,6 +107,18 @@ $couleur-tertiaire : #99E2D0;
         overflow: hidden;
         
         &:hover{
+            .titre-flex{
+                width: 85%;
+            }
+            .menu-check{
+                transform: translate(0, 0);
+            }
+            i{
+                transform: translate(0, 0) rotate(1turn);
+            }
+        }
+
+        &:active{
             .titre-flex{
                 width: 85%;
             }
