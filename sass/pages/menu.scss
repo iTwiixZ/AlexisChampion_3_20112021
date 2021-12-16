@@ -96,12 +96,27 @@
         border-radius: 16px 16px 16px 16px;
         height: 59px;
         box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
+        transform: translate(0,0);
+        overflow: hidden;
+        
+        &:hover{
+            .titre-flex{
+                width: 85%;
+            }
+            .menu-check{
+                transform: translate(0, 0);
+            }
+            i{
+                transform: translate(0, 0) rotate(1turn);
+            }
+        }
         h3{
             font-weight: bold;
             font-size: 15px;
             margin-top: 8px;
             margin-left: 8px;
             padding-bottom: 5px;
+            overflow: hidden;
         }
         p{
             display: flex;
@@ -110,14 +125,23 @@
             margin-top: -10px;
             font-weight: 100;
             font-size: 14px;
-        }
-        span{
-            margin-right: 16px;
-            
-            font-weight: 500;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            span{
+                font-weight: 500;
+                font-size: 14px;
+                margin-right: 16px;
+                input{
+                    display: none;
+                }
+            }
         }
     }
-
+   .titre-flex{
+       transition: 450ms 50ms;
+       width: 100%;
+   }
     .commander {
         display: flex;
         justify-content: center;
@@ -144,6 +168,31 @@
     }
 }
 
+
+.menu-check{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #99E2D0;
+    width: 59px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    transition: 500ms;
+    transform: translate(70px, 0);
+   i{
+        color: #99E2D0;
+        background-color: white;
+        border-radius: 50%;
+        border: solid 3px white;
+        transform: translate(-15px, 0) rotate(0turn);
+        transition: 500ms 100ms;
+    }
+    
+    
+}
 // ANIMATION 
 
 .delay-1 {
