@@ -1,3 +1,6 @@
+$couleur-primaire : #9356DC;
+$couleur-secondaire : #FF79DA;
+$couleur-tertiaire : #99E2D0;
 .loader{
     position: fixed;
     background-color: #f6f6f6;
@@ -8,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: disappear 4s;
+    animation: disappear 1.5s;
     animation-fill-mode: forwards;
     overflow: hidden;
 }
@@ -20,11 +23,11 @@
     width: 150px;
     border-bottom: solid 20px #f6f6f6;
     border-top: solid 20px #f6f6f6;
-    border-left: solid  20px #FF79DA;
-    border-right: solid 20px #9356dc;
+    border-left: solid  20px $couleur-secondaire;
+    border-right: solid 20px $couleur-primaire;
     border-radius: 100%;
     margin: auto;
-    animation: spin 1.5s linear infinite;
+    animation: spin 1s linear infinite;
     cursor: progress;
     
 }

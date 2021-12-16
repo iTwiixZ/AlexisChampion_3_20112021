@@ -424,7 +424,7 @@ a {
   margin-left: 8px;
   justify-content: space-between;
   margin-top: -10px;
-  font-weight: 300;
+  font-weight: 400;
   color: black;
   font-size: 14px;
   overflow: hidden;
@@ -435,9 +435,6 @@ a {
   font-weight: 500;
   font-size: 14px;
   margin-right: 16px;
-}
-.menu-grid .menus-category p span input {
-  display: none;
 }
 .menu-grid .titre-flex {
   transition: 450ms 50ms;
@@ -459,7 +456,6 @@ a {
   box-shadow: -1px 3px 8px 2px rgba(0, 0, 0, 0.75);
   margin-bottom: 32px;
   transition: all 350ms ease;
-  margin-top: 20px;
 }
 .menu-grid .commander button:hover, .menu-grid .commander button:active {
   transform: scale(1.1);
@@ -479,6 +475,7 @@ a {
   border-radius: 0 10px 10px 0;
   transition: 500ms;
   transform: translate(70px, 0);
+  cursor: pointer;
 }
 .menu-check i {
   color: #99E2D0;
@@ -492,81 +489,87 @@ a {
 .delay-1 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 500ms;
+  animation: apparition 900ms 900ms;
   animation-fill-mode: both;
 }
 
 .delay-2 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 900ms;
+  animation: apparition 900ms 1300ms;
   animation-fill-mode: both;
 }
 
 .delay-3 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 1300ms;
+  animation: apparition 900ms 1700ms;
   animation-fill-mode: both;
 }
 
 .delay-4 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 1700ms;
+  animation: apparition 900ms 2100ms;
   animation-fill-mode: both;
 }
 
 .delay-5 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 2100ms;
+  animation: apparition 900ms 2500ms;
   animation-fill-mode: both;
 }
 
 .delay-6 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 2500ms;
+  animation: apparition 900ms 2900ms;
   animation-fill-mode: both;
 }
 
 .delay-7 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 2900ms;
+  animation: apparition 900ms 3300ms;
   animation-fill-mode: both;
 }
 
 .delay-8 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 3300ms;
+  animation: apparition 900ms 3700ms;
   animation-fill-mode: both;
 }
 
 .delay-9 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 3700ms;
+  animation: apparition 900ms 4100ms;
   animation-fill-mode: both;
 }
 
 .delay-10 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 4100ms;
+  animation: apparition 900ms 4500ms;
   animation-fill-mode: both;
 }
 
 .delay-11 {
   opacity: 1;
   transform: translateY(0);
-  animation: apparition 900ms 4500ms;
+  animation: apparition 900ms 4900ms;
   animation-fill-mode: both;
 }
 
 @media (min-width: 1025px) {
+  .img_resto {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .title_menu {
     font-size: 40px;
   }
@@ -576,6 +579,43 @@ a {
   }
   .menu-grid h2 span {
     border-bottom: solid #99E2D0 4px;
+  }
+
+  .menu-grid {
+    align-items: center;
+  }
+
+  .menus-category {
+    width: 50%;
+    cursor: pointer;
+  }
+
+  .main_menu .heart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+  }
+  .main_menu .heart .fas {
+    opacity: 0;
+    font-size: 37px;
+    left: 1207px;
+    top: -22px;
+  }
+  .main_menu .heart .fas:hover, .main_menu .heart .fas :active {
+    opacity: 1;
+    font-size: 37.5px;
+    transform: scale(1.085);
+  }
+  .main_menu .heart .far {
+    font-size: 35px;
+    bottom: 113px;
+    left: 1202px;
+  }
+
+  .title_menu {
+    text-align: center;
+    font-size: 48px;
   }
 }
 @keyframes apparition {
@@ -623,7 +663,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disappear 4s;
+  animation: disappear 1.5s;
   animation-fill-mode: forwards;
   overflow: hidden;
 }
@@ -634,10 +674,10 @@ a {
   border-bottom: solid 20px #f6f6f6;
   border-top: solid 20px #f6f6f6;
   border-left: solid 20px #FF79DA;
-  border-right: solid 20px #9356dc;
+  border-right: solid 20px #9356DC;
   border-radius: 100%;
   margin: auto;
-  animation: spin 1.5s linear infinite;
+  animation: spin 1s linear infinite;
   cursor: progress;
 }
 

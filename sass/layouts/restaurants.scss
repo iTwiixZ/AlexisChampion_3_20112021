@@ -1,4 +1,6 @@
-
+$couleur-primaire : #9356DC;
+$couleur-secondaire : #FF79DA;
+$couleur-tertiaire : #99E2D0;
 .restaurant{
     background-color: #f6f6f6;
     margin-top: 44px;
@@ -28,8 +30,8 @@
             position:absolute;
             height: 30px;
             width: 90px;
-            background-color:#99E2D0;
-            color: darken($color: #99E2D0, $amount: 35%);
+            background-color:$couleur-tertiaire;
+            color: darken($color: $couleur-tertiaire, $amount: 35%);
             font-weight: bold;
             display: grid;
             place-items: center;
@@ -96,7 +98,7 @@
         right: 15px;
         background-clip: text;
         -webkit-background-clip: text;
-        background-image: linear-gradient(to top,#9356DC, #FF79DA);
+        background-image: linear-gradient(to top,$couleur-primaire, $couleur-secondaire);
         transition: all 320ms ease-out;
         &:hover{
             opacity: 1;

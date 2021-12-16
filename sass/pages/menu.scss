@@ -1,5 +1,7 @@
 @use "../utils/mixins.scss";
-
+$couleur-primaire : #9356DC;
+$couleur-secondaire : #FF79DA;
+$couleur-tertiaire : #99E2D0;
 .banner i{
     color:#353535;
     font-size: 22px;
@@ -53,7 +55,7 @@
         top: -42px;
         background-clip:text;
         -webkit-background-clip: text;
-        background-image: linear-gradient(to top,#9356DC, #FF79DA);
+        background-image: linear-gradient(to top,$couleur-primaire, $couleur-secondaire);
         transition: all 320ms ease-out;
         &:hover, :active{
             opacity: 1;
@@ -87,7 +89,7 @@
         font-size: 18px;
         font-weight: lighter;
         span{
-            border-bottom:solid #99E2D0 2px;
+            border-bottom:solid $couleur-tertiaire 2px;
         }
     }
     .menus-category{
@@ -123,7 +125,7 @@
             margin-left: 8px;
             justify-content: space-between;
             margin-top: -10px;
-            font-weight: 300;
+            font-weight: 400;
             color: black;
             font-size: 14px;
             overflow: hidden;
@@ -133,9 +135,7 @@
                 font-weight: 500;
                 font-size: 14px;
                 margin-right: 16px;
-                input{
-                    display: none;
-                }
+                
             }
         }
     }
@@ -148,48 +148,20 @@
         justify-content: center;
         button
         {
-            background:linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
-            border: none;
-            cursor: pointer;
-            color: white;
-            font-weight: 400;
-            font-size: 18px;
-            padding: 16px 32px;
-            border-radius: 32px;
-            box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
-            margin-bottom:32px;
-            transition: all 350ms ease;
-            margin-top: 20px;
+            @include mixins.bouton
         }
         button:hover, button:active
         {
-            transform: scale(1.1);
-            opacity: 0.85;
+            @include mixins.bouton-hover
         }
     }
 }
 
 
 .menu-check{
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #99E2D0;
-    width: 59px;
-    height: 59px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 10px 10px 0;
-    transition: 500ms;
-    transform: translate(70px, 0);
+    @include mixins.check;
    i{
-        color: #99E2D0;
-        background-color: white;
-        border-radius: 50%;
-        border: solid 3px white;
-        transform: translate(-15px, 0) rotate(0turn);
-        transition: 500ms 100ms;
+        @include mixins.check-icon;
     }
     
     
@@ -197,94 +169,43 @@
 // ANIMATION 
 
 .delay-1 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 500ms;
-    animation-fill-mode: both;
+    @include mixins.delay (900ms);
 }
 .delay-2 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 900ms;
-    animation-fill-mode: both;
+    @include mixins.delay (1300ms);
   }
   .delay-3 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 1300ms;
-    animation-fill-mode: both;
+    @include mixins.delay (1700ms);
   }
   .delay-4 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 1700ms;
-    animation-fill-mode: both;
+    @include mixins.delay (2100ms);
   }
   .delay-5 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 2100ms;
-    animation-fill-mode: both;
+    @include mixins.delay (2500ms);
   }
   .delay-6 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 2500ms;
-    animation-fill-mode: both;
+    @include mixins.delay (2900ms);
   }
   .delay-7 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 2900ms;
-    animation-fill-mode: both;
+    @include mixins.delay (3300ms);
   }
   .delay-8 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 3300ms;
-    animation-fill-mode: both;
+    @include mixins.delay (3700ms);
   }
   .delay-9 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 3700ms;
-    animation-fill-mode: both;
+    @include mixins.delay (4100ms);
   }
   .delay-10 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 4100ms;
-    animation-fill-mode: both;
+    @include mixins.delay (4500ms);
   }
   .delay-11 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 4500ms;
-    animation-fill-mode: both;
+    @include mixins.delay (4900ms);
   }
 
 
 // DESKTOP
 @media(min-width:1025px){
-    .title_menu{
-        font-size: 40px;
-    }
-    .menu-grid{
-        h2{
-            font-size: 24px;
-            span{
-                border-bottom: solid #99E2D0 4px ;
-            }
-        }
-    }
+
+    @include mixins.desktop-menus;
+    
 }
-
-
-
-
-
-
-
-
-
-

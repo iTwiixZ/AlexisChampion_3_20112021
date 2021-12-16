@@ -1,21 +1,136 @@
-@mixin delay-1 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 500ms;
-    animation-fill-mode: both;
+$couleur-primaire : #9356DC;
+$couleur-secondaire : #FF79DA;
+$couleur-tertiaire : #99E2D0;
+@mixin delay ($delay) {
+	opacity: 1;
+	transform: translateY(0);
+	animation: apparition 900ms $delay;
+	animation-fill-mode: both;
 }
 
-@mixin delay-2 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 900ms;
-    animation-fill-mode: both;
+@mixin bouton-hover{
+    transform: scale(1.1);
+    opacity: 0.85;
 }
 
-@mixin delay-3 {
-    opacity: 1;
-    transform: translateY(0);
-    animation: apparition 900ms 1300ms;
-    animation-fill-mode: both;
+@mixin bouton {
+    background:linear-gradient(to top, rgba(147,86,220,0.9), rgba(255,121,218,0.9));
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    box-shadow: -1px 3px 8px 2px rgba(0,0,0,0.75);
+    margin-bottom:32px;
+    transition: all 350ms ease;
 }
 
+
+@mixin check-icon {
+        color: $couleur-tertiaire;
+        background-color: white;
+        border-radius: 50%;
+        border: solid 3px white;
+        transform: translate(-15px, 0) rotate(0turn);
+        transition: 500ms 100ms;
+}
+
+@mixin check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #99E2D0;
+    width: 59px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 10px 10px 0;
+    transition: 500ms;
+    transform: translate(70px, 0);
+    cursor: pointer;
+}
+
+@mixin desktop-menus {
+    .img_resto{
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .title_menu{
+        font-size: 40px;
+    }
+    .menu-grid{
+        h2{
+            font-size: 24px;
+            span{
+                border-bottom: solid #99E2D0 4px ;
+            }
+        }
+    }
+
+    .menu-grid{
+        align-items: center;
+    }
+
+    .menus-category{
+        
+        width: 50%;
+        cursor: pointer;
+    }
+    .main_menu .heart{
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        
+        .fas{
+            opacity: 0;
+            font-size: 37px;
+            left: 1207px;
+            top: -22px;
+            
+            &:hover, :active{
+                opacity: 1;
+                font-size: 37.5px;
+                transform: scale(1.085);
+                }
+        }
+        .far{
+            font-size: 35px;
+            bottom: 113px;
+            left: 1202px;
+           }
+        
+    }
+
+    .title_menu{
+        text-align: center;
+        font-size: 48px;
+    }
+}
+
+@mixin footer-desktop {
+    footer{
+        
+        h3{
+            font-size: 32px;
+            text-align: center;
+        }
+        ol{
+            flex-direction: row;
+            gap: 100px;
+            font-size: 18px;
+            justify-content: center;
+        }
+        i{
+            font-size: 16px;
+        }
+        .fa-hands-helping{
+            font-size: 16px;
+        }
+    }
+}
