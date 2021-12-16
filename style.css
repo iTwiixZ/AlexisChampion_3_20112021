@@ -424,7 +424,8 @@ a {
   margin-left: 8px;
   justify-content: space-between;
   margin-top: -10px;
-  font-weight: 100;
+  font-weight: 300;
+  color: black;
   font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
@@ -622,7 +623,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disappear 5s;
+  animation: disappear 4s;
   animation-fill-mode: forwards;
   overflow: hidden;
 }
