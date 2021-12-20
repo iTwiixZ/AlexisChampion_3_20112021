@@ -94,15 +94,14 @@ $couleur-tertiaire : #99E2D0;
     
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
         position: relative;
         
         .fas{
             opacity: 0;
             font-size: 37px;
-            left: 1207px;
             top: -22px;
-            
+            left: 1109px;
             &:hover, :active{
                 opacity: 1;
                 font-size: 37.5px;
@@ -112,7 +111,8 @@ $couleur-tertiaire : #99E2D0;
         .far{
             font-size: 35px;
             bottom: 113px;
-            left: 1202px;
+            left: 1100px;
+
            }
         
     }

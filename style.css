@@ -619,14 +619,14 @@ a {
   .main_menu .heart {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
   }
   .main_menu .heart .fas {
     opacity: 0;
     font-size: 37px;
-    left: 1207px;
     top: -22px;
+    left: 1109px;
   }
   .main_menu .heart .fas:hover, .main_menu .heart .fas :active {
     opacity: 1;
@@ -636,7 +636,7 @@ a {
   .main_menu .heart .far {
     font-size: 35px;
     bottom: 113px;
-    left: 1202px;
+    left: 1100px;
   }
 
   .title_menu {
@@ -644,7 +644,7 @@ a {
     font-size: 48px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 414px) {
   .main_menu .heart .fas {
     left: 338.2px;
   }

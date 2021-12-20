@@ -227,7 +227,7 @@ $couleur-tertiaire : #99E2D0;
     
 }
 // FIX 
-@media(min-width:375px){
+@media(min-width:375px) and (max-width:414px){
     .main_menu .heart{
             .fas{
             
