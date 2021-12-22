@@ -56,7 +56,7 @@ $couleur-tertiaire : #99E2D0;
         background-clip:text;
         -webkit-background-clip: text;
         background-image: linear-gradient(to top,$couleur-primaire, $couleur-secondaire);
-        transition: all 320ms ease-out;
+        transition: all 320ms ease-in;
         &:hover{
             opacity: 1;
             font-size: 22.5px;
