@@ -625,8 +625,8 @@ a {
   .main_menu .heart .fas {
     opacity: 0;
     font-size: 37px;
-    top: -22px;
-    left: 1109px;
+    top: -15px;
+    left: 1108px;
   }
   .main_menu .heart .fas:hover, .main_menu .heart .fas :active {
     opacity: 1;
@@ -635,7 +635,7 @@ a {
   }
   .main_menu .heart .far {
     font-size: 35px;
-    bottom: 113px;
+    bottom: 122px;
     left: 1100px;
   }
 
