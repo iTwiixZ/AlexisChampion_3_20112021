@@ -402,11 +402,11 @@ a {
 .menu-grid .menus-category {
   background-color: white;
   border-radius: 16px 16px 16px 16px;
-  height: 59px;
-  box-shadow: -1px 3px 8px 2px rgba(0, 0, 0, 0.75);
+  height: 75px;
   transform: translate(0, 0);
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-grid .menus-category:hover .titre-flex {
   width: 85%;
@@ -428,11 +428,13 @@ a {
 }
 .menu-grid .menus-category h3 {
   font-weight: bold;
-  font-size: 15px;
-  margin-top: 8px;
+  font-size: 18px;
+  margin-top: 10px;
   margin-left: 8px;
   padding-bottom: 5px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-grid .menus-category p {
   display: flex;
@@ -441,13 +443,14 @@ a {
   margin-top: -10px;
   font-weight: 400;
   color: black;
-  font-size: 14px;
-  white-space: nowrap;
+  font-size: 16px;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-grid .menus-category p span {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 16px;
 }
 .menu-grid .titre-flex {
@@ -482,7 +485,7 @@ a {
   right: 0;
   background-color: #99E2D0;
   width: 59px;
-  height: 59px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;

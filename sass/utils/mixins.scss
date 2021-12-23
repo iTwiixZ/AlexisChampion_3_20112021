@@ -43,7 +43,7 @@ $couleur-tertiaire : #99E2D0;
     right: 0;
     background-color: #99E2D0;
     width: 59px;
-    height: 59px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,6 +51,7 @@ $couleur-tertiaire : #99E2D0;
     transition: 500ms;
     transform: translate(70px, 0);
     cursor: pointer;
+    
 }
 
 @mixin desktop-menus {
