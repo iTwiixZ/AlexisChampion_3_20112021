@@ -106,6 +106,7 @@ $couleur-tertiaire : #99E2D0;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        box-shadow: 1px 2px 11px #e5e5e5;
         
         &:hover{
             .titre-flex{
