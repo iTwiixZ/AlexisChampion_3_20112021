@@ -108,30 +108,7 @@ $couleur-tertiaire : #99E2D0;
         white-space: nowrap;
         box-shadow: 1px 2px 11px #e5e5e5;
         
-        &:hover{
-            .titre-flex{
-                width: 85%;
-                
-            }
-            .menu-check{
-                transform: translate(0, 0);
-            }
-            i{
-                transform: translate(0, 0) rotate(1turn);
-            }
-        }
-
-        &:active{
-            .titre-flex{
-                width: 85%;
-            }
-            .menu-check{
-                transform: translate(0, 0);
-            }
-            i{
-                transform: translate(0, 0) rotate(1turn);
-            }
-        }
+       
         h3{
             font-weight: bold;
             font-size: 18px;
@@ -162,6 +139,7 @@ $couleur-tertiaire : #99E2D0;
             }
         }
     }
+   
     .radio__input {
         appearance: none;
         width: 100%;
