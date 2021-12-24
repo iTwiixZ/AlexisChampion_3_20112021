@@ -647,38 +647,34 @@ a {
   }
 
   .main_menu .heart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #f6f6f6;
   }
   .main_menu .heart .fas {
     opacity: 0;
     font-size: 37px;
-    left: 1105px;
-    top: -23px;
+    top: 12px;
     transition: all 320ms ease-in;
   }
   .main_menu .heart .fas:hover, .main_menu .heart .fas :active {
     opacity: 1;
-    top: -23px;
-    left: 1105px;
+    top: 12px;
+    left: 386px;
     font-size: 37.5px;
     transform: scale(1.05);
   }
   .main_menu .heart .far {
+    top: 12px;
     font-size: 35px;
-    bottom: 115px;
-    left: 1100px;
     transition: all 100ms ease-out;
-  }
-  .main_menu .heart .far:hover {
-    opacity: 0;
   }
 
   .title_menu {
-    text-align: center;
     font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (min-width: 375px) and (max-width: 414px) {
