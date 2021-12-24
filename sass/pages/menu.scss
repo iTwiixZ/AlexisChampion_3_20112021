@@ -162,6 +162,36 @@ $couleur-tertiaire : #99E2D0;
             }
         }
     }
+    .radio__input {
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        cursor: pointer;
+      
+          &:hover+.titre-flex{
+              width: 85%;
+              }
+          &:hover+.titre-flex+.menu-check{                
+               transform: translate(0, 0);
+              }
+          &:hover+.titre-flex+.menu-check+i{                
+              transform: translate(0, 0) rotate(1turn);
+              }
+      
+          &:checked+.titre-flex{
+              width: 85%;
+              }
+          &:checked+.titre-flex+.menu-check{                
+               transform: translate(0, 0);
+              }
+          &:checked+.titre-flex+.menu-check+i{                
+              transform: translate(0, 0) rotate(1turn);
+              }
+       
+      }
+      
    .titre-flex{
        transition: 450ms 50ms;
        width: 100%;
