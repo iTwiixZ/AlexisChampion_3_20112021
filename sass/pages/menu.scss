@@ -90,6 +90,7 @@ $couleur-tertiaire : #99E2D0;
     flex-direction: column;
     padding: 16px;
     gap: 20px;
+    overflow: hidden;
 
     h2{
         font-size: 18px;
@@ -114,33 +115,15 @@ $couleur-tertiaire : #99E2D0;
        
         h3{
             font-weight: bold;
-            font-size: 18px;
+            font-size: 18.5px;
             margin-top: 10px;
             margin-left: 8px;
-            padding-bottom: 5px;
+            padding-bottom: 1px;
             overflow: hidden;
             text-overflow: ellipsis;
              white-space: nowrap;
         }
-        p{
-            display: flex;
-            margin-left: 8px;
-            justify-content: space-between;
-            margin-top: -5px;
-            font-weight: 400;
-            color: black;
-            font-size: 14px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-             white-space: nowrap;
-            span{
-                font-weight: 500;
-                font-size: 16px;
-                margin-right: 16px;
-                
-                
-            }
-        }
+     
         .radio__input {
             appearance: none;
             width: 100%;
@@ -174,12 +157,11 @@ $couleur-tertiaire : #99E2D0;
     }
    
     
-
-
-      
    .titre-flex{
        transition: 450ms 50ms;
        width: 100%;
+       
+    
    }
     .commander {
         display: flex;
@@ -204,6 +186,39 @@ $couleur-tertiaire : #99E2D0;
         
     }
     
+    
+}
+.price{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+    p{
+        display: block;
+        margin-left: 8px;
+        margin-top: -5px;
+        font-weight: 400;
+        color: black;
+        font-size: 14px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    span{
+            font-weight: 500;
+            font-size: 15px;
+            margin-right: 16px;
+            margin-bottom: 16px;
+            
+    }
+    
+}
+.title-menu{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     
 }
 // ANIMATION 

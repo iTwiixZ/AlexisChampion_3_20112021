@@ -391,6 +391,7 @@ a {
   flex-direction: column;
   padding: 16px;
   gap: 20px;
+  overflow: hidden;
 }
 .menu-grid h2 {
   font-size: 18px;
@@ -412,30 +413,13 @@ a {
 }
 .menu-grid .menus-category h3 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18.5px;
   margin-top: 10px;
   margin-left: 8px;
-  padding-bottom: 5px;
+  padding-bottom: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.menu-grid .menus-category p {
-  display: flex;
-  margin-left: 8px;
-  justify-content: space-between;
-  margin-top: -5px;
-  font-weight: 400;
-  color: black;
-  font-size: 14px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu-grid .menus-category p span {
-  font-weight: 500;
-  font-size: 16px;
-  margin-right: 16px;
 }
 .menu-grid .menus-category .radio__input {
   appearance: none;
@@ -510,6 +494,38 @@ a {
   border-radius: 50%;
   border: solid 3px white;
   transition: 500ms 100ms;
+}
+
+.price {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.price p {
+  display: block;
+  margin-left: 8px;
+  margin-top: -5px;
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.price span {
+  font-weight: 500;
+  font-size: 15px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.title-menu {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .delay-1 {
