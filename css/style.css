@@ -637,7 +637,7 @@ a {
   .main_menu .heart .fas:hover, .main_menu .heart .fas :active {
     opacity: 1;
     left: 386px;
-    font-size: 37.5px;
+    font-size: 37.8px;
     transform: scale(1.05);
   }
   .main_menu .heart .far {
