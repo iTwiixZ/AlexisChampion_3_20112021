@@ -102,18 +102,17 @@ $couleur-tertiaire : #99E2D0;
         .fas{
             opacity: 0;
             font-size: 37px;
-            top: 12px;
+            top: -25px;
             transition: all 320ms ease-in;
             &:hover, :active{
                 opacity: 1;
-                top: 12px;
                 left: 386px;
                 font-size: 37.5px;
                 transform: scale(1.05);
                 }
         }
         .far{
-            top: 12px;
+            top: -25px;
             font-size: 35px;
             transition: all 100ms ease-out;
             
