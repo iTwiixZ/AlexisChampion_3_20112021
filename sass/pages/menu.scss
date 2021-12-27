@@ -12,6 +12,7 @@ $couleur-tertiaire : #99E2D0;
 
 .img_resto{
     width: 100%;
+    
 }
 
 .img_resto2{
@@ -140,6 +141,9 @@ $couleur-tertiaire : #99E2D0;
         }
     }
    
+    
+
+
     .radio__input {
         appearance: none;
         width: 100%;
@@ -165,7 +169,7 @@ $couleur-tertiaire : #99E2D0;
                transform: translate(0, 0);
               }
           &:checked+.titre-flex+.menu-check+i{                
-              transform: translate(0, 0) rotate(1turn);
+              transform: translate(0, 0) rotate(0turn);
               }
        
       }
@@ -191,8 +195,10 @@ $couleur-tertiaire : #99E2D0;
 
 .menu-check{
     @include mixins.check;
+
    i{
         @include mixins.check-icon;
+        
     }
     
     

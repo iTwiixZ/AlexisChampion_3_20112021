@@ -460,7 +460,7 @@ a {
   transform: translate(0, 0);
 }
 .menu-grid .radio__input:checked + .titre-flex + .menu-check + i {
-  transform: translate(0, 0) rotate(1turn);
+  transform: translate(0, 0) rotate(0turn);
 }
 .menu-grid .titre-flex {
   transition: 450ms 50ms;
